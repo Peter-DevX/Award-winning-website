@@ -48,7 +48,7 @@ body {
   }
 
   .floating-nav {
-    @apply bg-black rounded-lg border;
+    @apply bg-black rounded-full;
   }
 
   .absolute-center {
@@ -144,7 +144,7 @@ body {
 }
 
 .indicator-line {
-  @apply h-1 w-px rounded-full bg-white transition-all duration-200 ease-in-out;
+  @apply h-1 w-[2px] rounded-full bg-black transition-all duration-200 ease-in-out;
 }
 
 .indicator-line.active {

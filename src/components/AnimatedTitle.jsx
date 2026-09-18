@@ -18,9 +18,9 @@ const  AnimatedTitle = ({title, containerClass}) => {
 
             titleAnimation.to('.animated-word ',{
             opacity: 1,
-            transform: 'translate3d(0,0,0) rotateY(0deg) rotateX(0deg)',
+            transform: 'translate3d(1,0,0) rotateY(0deg) rotateX(0deg)',
             ease: 'power2.inOut',
-            stagger: 0.02
+            stagger: 0.03
         })
             return () => ctx.revert();
         }, containerRef)
@@ -29,10 +29,10 @@ const  AnimatedTitle = ({title, containerClass}) => {
     },[])
 
   return (
-    <div ref={containerRef} className={`animated-title ${containerClass} `}>
-      <div className={`mt-5 text-center text-4xl uppercase leading-[0.8] md:text-[6rem] ${containerClass}`}>
+    <div ref={containerRef} className={`animated-title ${containerClass}`}>
+      <div className={`mt-5 text-center text-3xl uppercase leading-[1] md:text-[6rem] ${containerClass}`}>
     {title.split('<br/>').map((line,index) => (
-        <div key={index} className='text-center max-w-full flex-wrap gap-2 px-10 md:gap-2'>
+        <div key={index} className=' max-w-full flex-wrap justify-center gap-1 px-10 text-center md:gap-2'>
             {line.split(' ').map((word,i) => (
                 <span key={i} className='animated-word' dangerouslySetInnerHTML={{__html: word }}
                 />
