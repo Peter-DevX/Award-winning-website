@@ -6,11 +6,8 @@ import gsap from 'gsap';
 
 import Button from './Button.jsx'
 
-
-
-
 const navItems = [
-  'Nexus', 'Vault', 'Prologue', 'About','Contact'
+  'Nexus',  'About', 'Prologue', 'Story','Contact'
 ]
 
 

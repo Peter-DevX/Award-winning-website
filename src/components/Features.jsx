@@ -6,7 +6,7 @@ import { TiLocationArrow } from 'react-icons/ti';
 
 const Features = () => {
   return (
-    <section className='bg-black pb-52'>
+    <section id='prologue' className='bg-black pb-52'>
       <div className='container mx-auto px-3 md:px-10'>
         <div className='px-5 py-32  items-center justify-center'>
             <p className='text-white font-general text-2xl text-center uppercase mb-5'>Into the Metagame Layer</p>
@@ -33,7 +33,7 @@ const Features = () => {
         </BentoTilt>
 
         <BentoTilt className='bento-tilt_1 me-14 md:col-span-1 md:me-0'>
-            <BentoCard src='videos/feature-4.mp4' title='Nexus' description='A gamified social hub, adding a new dimension of play to social inteeraction for web3 communities.'/>
+            <BentoCard src='videos/feature-4.mp4' title='Beta' description='A gamified social hub, adding a new dimension of play to social inteeraction for web3 communities.'/>
         </BentoTilt>
         <div className="bento-tilt_2">
             <div className='flex size-full flex-col justify-between bg-violet-600 opacity-70 p-5'>
